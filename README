@@ -1,0 +1,9 @@
+This code handles reCaptcha (http://www.google.com/recaptcha) form submissions in Python.
+
+Set the recaptcha_private_key variable to the one provided for your domain, and call:
+
+    confirm (client_ip_address, recaptcha_challenge_field, recaptcha_response_field)
+
+Which returns either True (i.e., the captcha was completed correctly) or False.
+
+The client_ip_address, recaptcha_challenge_field, recaptcha_response_field fields are provided by parsing the results of POSTing the form (e.g., using a web server module like mod_python, mod_wsgi, or FastCGI).
