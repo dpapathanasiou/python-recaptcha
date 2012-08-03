@@ -5,7 +5,6 @@ import urllib, urllib2
 recaptcha_private_key = '...[your private key goes here]...'
 
 recaptcha_server_name = 'http://www.google.com/recaptcha/api/verify'
-recaptcha_server_form = 'https://www.google.com/recaptcha/api/challenge'
 
 def to_bytestring (s):
     """Convert the given unicode string to a bytestring, using the standard encoding,
